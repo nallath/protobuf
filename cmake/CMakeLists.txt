@@ -5,8 +5,6 @@ if(protobuf_VERBOSE)
   message(STATUS "Protocol Buffers Configuring...")
 endif()
 
-include(CPackConfig.cmake)
-
 # CMake policies
 cmake_policy(SET CMP0022 NEW)
 
@@ -169,6 +167,7 @@ if (protobuf_BUILD_TESTS)
 endif (protobuf_BUILD_TESTS)
 
 include(install.cmake)
+include(CPackConfig.cmake)
 
 if (protobuf_BUILD_EXAMPLES)
   include(examples.cmake)

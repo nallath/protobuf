@@ -1,4 +1,4 @@
-set(CPACK_PACKAGE_VENDOR "")
+set(CPACK_PACKAGE_VENDOR "Protobuf")
 set(CPACK_PACKAGE_CONTACT "Jaime van Kessel <j.vanKessel@ultimaker.com>")
 set(CPACK_PACKAGE_DESCRIPTION_SUMMARY "Protobuf communication framework")
 if(NOT DEFINED CPACK_PACKAGE_VERSION)

@@ -11,5 +11,10 @@ mkdir _build_armhf
 cd _build_armhf
 
 cmake ../cmake -DCMAKE_TOOLCHAIN_FILE=$1 -Dprotobuf_BUILD_TESTS=OFF -Dprotobuf_BUILD_EXAMPLES=OFF
+
+# Build & create package
 make
 make package
+
+# Move generated package to folder where build script can find it
+mv *.deb .. 
