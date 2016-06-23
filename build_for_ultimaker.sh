@@ -12,3 +12,4 @@ cd _build_armhf
 
 cmake ../cmake -DCMAKE_TOOLCHAIN_FILE=$1 -Dprotobuf_BUILD_TESTS=OFF -Dprotobuf_BUILD_EXAMPLES=OFF
 make
+make package
